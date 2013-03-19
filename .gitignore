@@ -1,0 +1,83 @@
+/source/mylo.log
+/source/core
+/source/NixDebug/core
+/source/nix/core
+/source/NixDebugUI
+
+# Makes sure back up files created with vim don't get added
+
+*~
+
+# Apple filesystem goo
+*.DS_Store
+
+# Windows File Explorer Thumbnails db
+Thumbs.db
+
+# Per user specific XCode IDE data
+xcuserdata/
+
+# Another temporary file not needed to be repo'd
+*.swp
+
+# Ignore binary resource files associated with each file in XCode
+._*
+
+#Ignore pdbs
+*.pdb
+
+#Ignore sdfs
+*.sdf
+
+#Ignore opensdfs
+*.opensdf
+
+#Ignore objs
+*.obj
+
+#Ignore the Debug/Release directories
+Debug
+debug
+Release
+release
+
+#Ignore exe
+*.exe
+
+#Ignore the user specific file
+*.suo
+
+#Ignore bin
+bin
+
+#Ignore obj
+obj
+
+#Ignore the s3db file output to the win32 directory
+source/win32/MyLoApp/MyloDB.s3db
+
+#Ignore C++ pre-compiled header dir
+ipch
+
+#Ignore user specific VC files
+*.user
+*.dll
+*.o
+*.so
+*.nupkg
+*.aps
+
+#Ignore files VS leaves after a crash
+~VC*.tmp
+
+# We need to include the lib files that are included with the Windows Bonjour SDK
+# so everyone doesn't have to install the SDK in order to build
+!dnssd.lib
+!dnssd.lib.pdb
+!fotofly.dll
+*.ncrunchsolution
+!source/NixDebug
+source/NixDebugTests
+
+# win32 output root folder
+/out/
